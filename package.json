@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "next": "15.3.1",
@@ -21,10 +22,11 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
+    "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
     "patch-package": "^8.0.0",
     "prettier": "^3.5.3",
-    "prettier-plugin-tailwind-styled-components": "^1.0.0",
+    "prettier-plugin-tailwind-styled-components": "1.0.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwind-styled-components": "^2.2.0",
     "tailwindcss": "^4",

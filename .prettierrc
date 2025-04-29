@@ -1,0 +1,10 @@
+{
+  "lineWidth": 80,
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-tailwind-styled-components"
+  ],
+  "tailwindFunctions": ["clsx", "tw"],
+  "tailwindStyledComponentsImport": "@/shared/utils/tailwind",
+  "tailwindStyledComponentsFunctions": ["clsx"]
+}

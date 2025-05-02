@@ -6,7 +6,7 @@ import { SC } from "./layout.styles";
 const poppinsSans = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins-sans",
-  weight: ["700"],
+  weight: ["600", "800"],
 });
 
 export const metadata: Metadata = {

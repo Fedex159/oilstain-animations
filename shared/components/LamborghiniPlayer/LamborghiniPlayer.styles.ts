@@ -1,7 +1,8 @@
 import tw from "@/shared/utils/tailwind";
 
 const Container = tw.div`
-  relative
+  absolute
+  inset-0
 `;
 
 const Video = tw.video`
@@ -10,6 +11,8 @@ const Video = tw.video`
   h-dvh
   w-full
   object-cover
+  transition-opacity
+  ease-in-out
 `;
 
 export const SC = {

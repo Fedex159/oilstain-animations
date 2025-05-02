@@ -3,7 +3,10 @@
 @theme inline {
   --font-sans: var(--font-poppins-sans);
   --fade-in: fade-in 1s ease-in-out forwards;
-  --translate: translate 2s cubic-bezier(0.8, 0, 0, 0.95) forwards;
+  --translate-letter: translate-letter 2s cubic-bezier(0.8, 0, 0, 0.95) forwards;
+  --translate-enter: translate-enter 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    800ms forwards;
+  --duration-enter: 400ms;
 }
 
 @keyframes fade-in {
@@ -15,9 +18,19 @@
   }
 }
 
-@keyframes translate {
+@keyframes translate-letter {
   0% {
     translate: 0 100%;
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}
+
+@keyframes translate-enter {
+  0% {
+    translate: 0 100vh;
   }
 
   100% {

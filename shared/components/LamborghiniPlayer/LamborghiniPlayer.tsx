@@ -66,7 +66,10 @@ export const LamborghiniPlayer = () => {
     // Play preloaded video
     hiddenPlayer.setAttribute("style", "opacity: 1");
     hiddenPlayer.setAttribute(ACTIVE_ATTRIBUTE, "true");
-    hiddenPlayer.play().catch(() => {});
+
+    setTimeout(() => {
+      hiddenPlayer.play().catch(() => {});
+    }, 150);
 
     currentVideoRef.current = nextCurrent;
   }, [getPlayers]);

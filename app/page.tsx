@@ -1,3 +1,9 @@
+import { StartScreen } from "@/shared/sections";
+
 export default function Home() {
-  return <div>Oilstain animations</div>;
+  return (
+    <main>
+      <StartScreen />
+    </main>
+  );
 }
